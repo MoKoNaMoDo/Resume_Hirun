@@ -73,27 +73,27 @@
         "projects": {
             "proj1": {
                 "title": "Smart Recipe Recommender",
-                "role": "Final Year Project",
+                "role": "โครงงานจบการศึกษา",
                 "desc": "ระบบแนะนำเมนูอาหารตามวัตถุดิบที่มี โดยใช้เทคนิค Content-based filtering พัฒนา Dataset สูตรอาหารไทยและระบบจัดการความชอบผู้ใช้",
-                "tech": "Python, Recommendation System, Database"
+                "tech": "Python, ระบบแนะนำ (Recommendation), ฐานข้อมูล"
             },
             "proj2": {
                 "title": "Trading Tax & Cash Flow Calculator",
                 "role": "Full Stack Developer",
                 "desc": "ระบบคำนวณภาษีอัตโนมัติสำหรับการซื้อขาย ติดตามธุรกรรมรายวันและกระแสเงินสด (เข้า/ออก)",
-                "tech": "Web Development, Calculation Logic, Dashboard"
+                "tech": "Web Development, ตรรกะการคำนวณ, แดชบอร์ด"
             },
             "proj3": {
                 "title": "News Website Maintenance",
                 "role": "Frontend Developer",
                 "desc": "ปรับปรุง UX/Navigation เพื่อการใช้งานที่ง่ายขึ้น และอัปเกรดโครงสร้างระบบให้รองรับเทคโนโลยีเว็บสมัยใหม่",
-                "tech": "Modern Web, UX/UI, Optimization"
+                "tech": "Modern Web, UX/UI, การปรับปรุงประสิทธิภาพ"
             },
             "proj4": {
                 "title": "Sales Data Analysis",
-                "role": "Data Analyst",
+                "role": "Data Analyst (นักวิเคราะห์ข้อมูล)",
                 "desc": "วิเคราะห์ข้อมูลยอดขายสำหรับแคมเปญโปรโมชั่น ใช้ Dataset จาก Kaggle และเปรียบเทียบโมเดล ML (Decision Trees) เพื่อวัดประสิทธิภาพ",
-                "tech": "Machine Learning, Data Analysis, Kaggle"
+                "tech": "Machine Learning, การวิเคราะห์ข้อมูล, Kaggle"
             }
         }
     },
