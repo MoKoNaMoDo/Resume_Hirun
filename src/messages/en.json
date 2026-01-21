@@ -1,103 +1,111 @@
 {
     "Meta": {
-        "title": "Hirun Chatcharoensawat | AI Engineer & Full Stack Developer",
-        "description": "Portfolio of Hirun - AI Engineer and Full Stack Developer specializing in LLMs, Modern Web, and Data Science."
+        "title": "Resume Hirun | AI Engineer & Full Stack Developer",
+        "description": "Portfolio of Hirun - AI Engineer and Full Stack Developer specializing in LLM, Modern Web, and Machine Learning."
     },
     "Nav": {
         "home": "Home",
         "about": "About",
         "works": "Works",
-        "contact": "Contact",
-        "fullName": "Hirun Chatcharoensawat"
+        "contact": "Contact"
     },
     "Hero": {
         "greeting": "Hello, I am",
-        "name": "Hirun",
+        "name": "Hirun Chatcharoensawat",
         "role": "AI Engineer & Full Stack Developer",
-        "description": "Passionate about AI and LLMs. Turning complex data into intelligent solutions and crafting seamless digital experiences.",
+        "description": "Passionate about AI, continuously expanding my knowledge, and eager to apply the latest advancements to real-world projects. Currently focusing on Large Language Models (LLMs).",
         "cta": "View My Work",
         "contact": "Contact Me"
     },
     "About": {
         "title": "About Me",
-        "description": "I am passionate about AI, continuously expanding my knowledge, and eager to apply the latest advancements to real-world projects. Currently focusing my studies on Large Language Models (LLMs) and their applications in creating innovative, impactful solutions.",
-        "skills": "Key Skills",
-        "educationTitle": "Education",
-        "education": [
-            {
-                "institution": "Suan Dusit University",
-                "degree": "Computer Science",
-                "year": "05/2025",
-                "grade": "GPA: 3.5"
+        "description": "I am an AI Engineer and Full Stack Developer with a strong passion for Artificial Intelligence, specifically Large Language Models (LLMs). I combine this with modern web development expertise to build innovative and impactful solutions.",
+        "skills": "Skills & Expertise",
+        "education": "Education",
+        "experience": "Experience",
+        "certificates": "Certificates",
+        "tech_stack": "Technologies & Tools",
+        "skill_categories": {
+            "programming": "Programming Languages",
+            "frontend": "Frontend Development",
+            "backend": "Backend & Database",
+            "ai_data": "AI & Data Science",
+            "tools": "Tools & Platforms"
+        },
+        "education_list": {
+            "edu1": {
+                "degree": "Computer Science (B.Sc.)",
+                "school": "Suan Dusit University",
+                "year": "2025 (GPA: 3.50 Honor)",
+                "desc": "Faculty of Science and Technology"
             }
-        ],
-        "certificatesTitle": "Certificates",
-        "certificates": [
-            {
-                "name": "IBM Data Science Professional",
-                "issuer": "Coursera",
-                "year": "2025"
+        },
+        "experience_list": {
+            "exp1": {
+                "role": "AI Engineer",
+                "company": "Beatrix Co., Ltd.",
+                "year": "Oct 2026 - Present",
+                "desc": "Tested Alphalink systems, Optimized web performance, UX/UI Design (Figma), and developed auction web platform."
+            },
+            "exp2": {
+                "role": "AI Software Engineer",
+                "company": "Enabridge Co., Ltd.",
+                "year": "Jul 2026 - Sep 2026",
+                "desc": "Full Stack Dev, Prompt Engineering, Database Architecture, utilised AI CLI & MCP tools."
+            },
+            "exp3": {
+                "role": "Frontend Developer",
+                "company": "Kaowna Broker",
+                "year": "Sep 2025 - Nov 2025",
+                "desc": "Developed financial and tax calculation websites."
+            },
+            "exp4": {
+                "role": "Frontend Developer (Intern)",
+                "company": "Strategy and Planning Office, SDU",
+                "year": "Jul 2025 - Aug 2025",
+                "desc": "Developed university assessment systems and analyzed evaluation data."
             }
-        ]
+        }
     },
     "Portfolio": {
-        "title": "Professional & Projects",
-        "viewProject": "View",
-        "projects": [
-            {
-                "id": "bot",
-                "title": "Bank of Thailand",
-                "role": "Database Migration",
-                "year": "2023",
-                "description": "Migrated the database from the legacy website to the new platform, ensuring data integrity and consistency.",
-                "tech": "SQL, Database Management, Migration Tools",
-                "color": "#3b82f6"
-            },
-            {
-                "id": "trading",
-                "title": "Trading Tax & Cash Flow Calculator",
-                "role": "Full Stack Dev",
-                "year": "2024",
-                "description": "Track daily trading transactions, monitor cash flow (inflow/outflow), and automate tax calculations/deductions.",
-                "tech": "React, Node.js, Fintech",
-                "color": "#10b981"
-            },
-            {
-                "id": "news",
-                "title": "News Website Maintenance",
-                "role": "Optimization",
-                "year": "2025",
-                "description": "Enhanced user experience (UX) and navigation to improve usability. Upgraded system architecture for modern web tech.",
-                "tech": "Next.js, UI/UX, Performance",
-                "color": "#f59e0b"
-            },
-            {
-                "id": "recipe",
+        "title": "Selected Works",
+        "viewProject": "View Project",
+        "projects": {
+            "proj1": {
                 "title": "Smart Recipe Recommender",
                 "role": "Final Year Project",
-                "year": "2025",
-                "description": "Developed a recipe recommendation system based on available ingredients using content-based filtering and verified datasets.",
-                "tech": "Python, Machine Learning, Recommendation Systems",
-                "color": "#ec4899"
+                "desc": "Recipe recommendation system based on available ingredients using Content-based filtering. Built Thai recipe datasets and integrated database for user preferences.",
+                "tech": "Python, Recommendation System, Database"
             },
-            {
-                "id": "data",
-                "title": "Data Analysis Experience",
+            "proj2": {
+                "title": "Trading Tax & Cash Flow Calculator",
+                "role": "Full Stack Developer",
+                "desc": "Automated tax calculation and deduction system for buy/sell activities. Tracks daily trading transactions and monitors cash flow (inflow/outflow).",
+                "tech": "Web Development, Calculation Logic, Dashboard"
+            },
+            "proj3": {
+                "title": "News Website Maintenance",
+                "role": "Frontend Developer",
+                "desc": "Enhanced UX/navigation to improve usability and upgraded system architecture to support modern web technologies for a news platform.",
+                "tech": "Modern Web, UX/UI, Optimization"
+            },
+            "proj4": {
+                "title": "Sales Data Analysis",
                 "role": "Data Analyst",
-                "year": "2025",
-                "description": "Conducted sales data analysis and evaluated models like Decision Trees using Kaggle datasets for business insights.",
-                "tech": "Python, Pandas, Scikit-learn, Tableau",
-                "color": "#8b5cf6"
+                "desc": "Analyzed sales data for promotional campaigns and export strategies. Used Kaggle datasets and compared ML models (Decision Trees) to evaluate effectiveness.",
+                "tech": "Machine Learning, Data Analysis, Kaggle"
             }
-        ]
+        }
     },
     "Contact": {
         "title": "Get in Touch",
-        "info": "Contact Info",
-        "email": "hirunchatcharoensawat@gmail.com",
-        "phone": "0865624967",
-        "address": "10270, Mueang, Samut Prakan",
-        "cta": "Let's build something amazing together."
+        "title_hero": "Let's Work \nTogether.",
+        "subtitle": "Interested in working together or have a question? Feel free to reach out.",
+        "email": "Email",
+        "phone": "Phone",
+        "location": "Address",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
     },
     "Footer": {
         "copyright": "© 2026 Hirun Chatcharoensawat. All rights reserved."

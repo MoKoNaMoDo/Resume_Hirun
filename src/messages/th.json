@@ -1,103 +1,111 @@
 {
     "Meta": {
-        "title": "Hirun Chatcharoensawat | AI Engineer & Full Stack Developer",
-        "description": "พอร์ตฟอลิโอของ Hirun - AI Engineer และ Full Stack Developer ผู้เชี่ยวชาญด้าน LLMs, Modern Web และ Data Science"
+        "title": "Resume Hirun | AI Engineer & Full Stack Developer",
+        "description": "พอร์ตฟอลิโอของคุณ Hirun - AI Engineer และ Full Stack Developer ผู้เชี่ยวชาญด้าน LLM, Modern Web และ Machine Learning"
     },
     "Nav": {
         "home": "หน้าแรก",
         "about": "เกี่ยวกับ",
         "works": "ผลงาน",
-        "contact": "ติดต่อ",
-        "fullName": "หิรัญ ฉัตรเจริญสวัสดิ์"
+        "contact": "ติดต่อ"
     },
     "Hero": {
-        "greeting": "สวัสดีครับ, ผมคือ",
-        "name": "หิรัญ",
+        "greeting": "สวัสดี, ผมคือ",
+        "name": "หิรัญ ชัยเจริญสวัสดิ์",
         "role": "AI Engineer & Full Stack Developer",
-        "description": "หลงใหลใน AI และ LLMs มุ่งมั่นที่จะเปลี่ยนข้อมูลที่ซับซ้อนให้เป็นโซลูชันที่ชาญฉลาด และสร้างสรรค์ประสบการณ์ดิจิทัลที่ไร้รอยต่อ",
+        "description": "มุ่งมั่นในการเรียนรู้นวัตกรรม AI และนำมาประยุกต์ใช้เพื่อสร้างสรรค์ผลงาน พัฒนาตนเองอย่างต่อเนื่องในด้าน Large Language Models (LLMs) และเทคโนโลยีเว็บสมัยใหม่",
         "cta": "ดูผลงานของผม",
         "contact": "ติดต่อผม"
     },
     "About": {
         "title": "เกี่ยวกับผม",
-        "description": "ผมมีความมุ่งมั่นในด้าน AI และเรียนรู้สิ่งใหม่อย่างต่อเนื่อง เพื่อนำเทคโนโลยีล่าสุดมาประยุกต์ใช้ในโปรเจคจริง ปัจจุบันกำลังโฟกัสการศึกษาด้าน Large Language Models (LLMs) และการนำไปใช้สร้างนวัตกรรมที่มีผลกระทบเชิงบวก",
-        "skills": "ทักษะที่เชี่ยวชาญ",
-        "educationTitle": "การศึกษา",
-        "education": [
-            {
-                "institution": "มหาวิทยาลัยสวนดุสิต",
-                "degree": "วิทยาการคอมพิวเตอร์",
-                "year": "05/2025",
-                "grade": "GPA: 3.5"
+        "description": "ผมเป็น AI Engineer และ Full Stack Developer ที่มีความหลงใหลในเทคโนโลยีปัญญาประดิษฐ์ (AI) โดยเฉพาะ Large Language Models (LLMs) ผสานข้ามกับการพัฒนาเว็บ Application ด้วย Tech Stack ที่ทันสมัย เพื่อสร้างโซลูชันที่ใช้งานได้จริงและมีประสิทธิภาพ",
+        "skills": "ทักษะและความสามารถ",
+        "education": "การศึกษา",
+        "experience": "ประสบการณ์การทำงาน",
+        "certificates": "ใบรับรอง",
+        "tech_stack": "เทคโนโลยีและเครื่องมือ",
+        "skill_categories": {
+            "programming": "ภาษาโปรแกรม",
+            "frontend": "Frontend Development",
+            "backend": "Backend & Database",
+            "ai_data": "AI & Data Science",
+            "tools": "เครื่องมือและอื่นๆ"
+        },
+        "education_list": {
+            "edu1": {
+                "degree": "วิทยาศาสตรบัณฑิต (วท.บ.) วิทยาการคอมพิวเตอร์",
+                "school": "มหาวิทยาลัยสวนดุสิต",
+                "year": "2568 (เกรดเฉลี่ย: 3.50 เกียรตินิยม)",
+                "desc": "คณะวิทยาศาสตร์และเทคโนโลยี"
             }
-        ],
-        "certificatesTitle": "ใบรับรอง",
-        "certificates": [
-            {
-                "name": "IBM Data Science Professional",
-                "issuer": "Coursera",
-                "year": "2025"
+        },
+        "experience_list": {
+            "exp1": {
+                "role": "AI Engineer",
+                "company": "บริษัท บีททริกซ์ จำกัด",
+                "year": "ต.ค. 2568 - ปัจจุบัน",
+                "desc": "ทดสอบระบบ Alphalink, ปรับปรุงประสิทธิภาพเว็บ thai-link, ออกแบบ UX/UI (Figma), และพัฒนาเว็บประมูลสินค้า"
+            },
+            "exp2": {
+                "role": "AI Software Engineer",
+                "company": "บริษัท เอนาบริดจ์ จำกัด",
+                "year": "ก.ค. 2568 - ก.ย. 2568",
+                "desc": "Full Stack Dev, Prompt Engineering, ออกแบบโครงสร้าง Database, ใช้งาน AI CLI & MCP tools"
+            },
+            "exp3": {
+                "role": "Frontend Developer",
+                "company": "ก้าวหน้าโบรกเกอร์",
+                "year": "ก.ย. 2567 - พ.ย. 2567",
+                "desc": "พัฒนาเว็บไซต์การเงิน คำนวณภาษี และระบบเนื้อหาของบริษัท"
+            },
+            "exp4": {
+                "role": "Frontend Developer (ฝึกงาน)",
+                "company": "สำนักงานยุทธศาสตร์และแผน มสด.",
+                "year": "ก.ค. 2567 - ส.ค. 2567",
+                "desc": "พัฒนาระบบประเมินผลมหาวิทยาลัย และวิเคราะห์ข้อมูลการประเมิน"
             }
-        ]
+        }
     },
     "Portfolio": {
-        "title": "ประสบการณ์และโปรเจค",
-        "viewProject": "ดูรายละเอียด",
-        "projects": [
-            {
-                "id": "bot",
-                "title": "ธนาคารแห่งประเทศไทย (Bank of Thailand)",
-                "role": "Database Migration",
-                "year": "2023",
-                "description": "ย้ายฐานข้อมูลจากเว็บไซต์ระบบเก่า (Legacy) ไปยังแพลตฟอร์มใหม่ เพื่อให้ข้อมูลมีความถูกต้องและครบถ้วน",
-                "tech": "SQL, Database Management, Migration Tools",
-                "color": "#3b82f6"
-            },
-            {
-                "id": "trading",
-                "title": "โปรแกรมคำนวณภาษีเทรด & Cash Flow",
-                "role": "Full Stack Dev",
-                "year": "2024",
-                "description": "ติดตามธุรกรรมการเทรดรายวัน และตรวจสอบกระแสเงินสด (เข้า/ออก) พร้อมระบบคำนวณและหักภาษีอัตโนมัติ",
-                "tech": "React, Node.js, Fintech",
-                "color": "#10b981"
-            },
-            {
-                "id": "news",
-                "title": "ปรับปรุงและดูแลเว็บไซต์ข่าว",
-                "role": "Optimization",
-                "year": "2025",
-                "description": "ยกระดับประสบการณ์ผู้ใช้ (UX) และการนำทางของเว็บ ปรับปรุงสถาปัตยกรรมระบบเพื่อรองรับเทคโนโลยีเว็บสมัยใหม่",
-                "tech": "Next.js, UI/UX, Performance",
-                "color": "#f59e0b"
-            },
-            {
-                "id": "recipe",
-                "title": "ระบบแนะนำสูตรอาหารอัจฉริยะ",
+        "title": "ผลงานที่ผ่านมา",
+        "viewProject": "ดูโปรเจค",
+        "projects": {
+            "proj1": {
+                "title": "Smart Recipe Recommender",
                 "role": "Final Year Project",
-                "year": "2025",
-                "description": "พัฒนาระบบแนะนำเมนูอาหารจากวัตถุดิบที่มีอยู่ โดยใช้เทคนิค Content-based filtering และชุดข้อมูลที่ผ่านการตรวจสอบ",
-                "tech": "Python, Machine Learning, Recommendation Systems",
-                "color": "#ec4899"
+                "desc": "ระบบแนะนำเมนูอาหารตามวัตถุดิบที่มี โดยใช้เทคนิค Content-based filtering พัฒนา Dataset สูตรอาหารไทยและระบบจัดการความชอบผู้ใช้",
+                "tech": "Python, Recommendation System, Database"
             },
-            {
-                "id": "data",
-                "title": "ประสบการณ์วิเคราะห์ข้อมูล",
+            "proj2": {
+                "title": "Trading Tax & Cash Flow Calculator",
+                "role": "Full Stack Developer",
+                "desc": "ระบบคำนวณภาษีอัตโนมัติสำหรับการซื้อขาย ติดตามธุรกรรมรายวันและกระแสเงินสด (เข้า/ออก)",
+                "tech": "Web Development, Calculation Logic, Dashboard"
+            },
+            "proj3": {
+                "title": "News Website Maintenance",
+                "role": "Frontend Developer",
+                "desc": "ปรับปรุง UX/Navigation เพื่อการใช้งานที่ง่ายขึ้น และอัปเกรดโครงสร้างระบบให้รองรับเทคโนโลยีเว็บสมัยใหม่",
+                "tech": "Modern Web, UX/UI, Optimization"
+            },
+            "proj4": {
+                "title": "Sales Data Analysis",
                 "role": "Data Analyst",
-                "year": "2025",
-                "description": "วิเคราะห์ข้อมูลการขายและประเมินโมเดล เช่น Decision Trees โดยใช้ชุดข้อมูลจาก Kaggle เพื่อหา Insight ทางธุรกิจ",
-                "tech": "Python, Pandas, Scikit-learn, Tableau",
-                "color": "#8b5cf6"
+                "desc": "วิเคราะห์ข้อมูลยอดขายสำหรับแคมเปญโปรโมชั่น ใช้ Dataset จาก Kaggle และเปรียบเทียบโมเดล ML (Decision Trees) เพื่อวัดประสิทธิภาพ",
+                "tech": "Machine Learning, Data Analysis, Kaggle"
             }
-        ]
+        }
     },
     "Contact": {
         "title": "ติดต่อผม",
-        "info": "ข้อมูลติดต่อ",
-        "email": "hirunchatcharoensawat@gmail.com",
-        "phone": "0865624967",
-        "address": "10270, เมือง, สมุทรปราการ",
-        "cta": "มาร่วมสร้างสรรค์ผลงานที่ยอดเยี่ยมด้วยกัน"
+        "title_hero": "มาร่วมสร้างสรรค์\nผลงานด้วยกัน",
+        "subtitle": "สนใจร่วมงานหรือมีโปรเจคที่น่าสนใจ? ติดต่อผมได้ทุกช่องทางครับ",
+        "email": "อีเมล",
+        "phone": "โทร",
+        "location": "ที่อยู่",
+        "github": "GitHub",
+        "linkedin": "LinkedIn"
     },
     "Footer": {
         "copyright": "© 2026 Hirun Chatcharoensawat. สงวนลิขสิทธิ์."
