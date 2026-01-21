@@ -1,0 +1,105 @@
+{
+    "Meta": {
+        "title": "Hirun Chatcharoensawat | AI Engineer & Full Stack Developer",
+        "description": "Portfolio of Hirun - AI Engineer and Full Stack Developer specializing in LLMs, Modern Web, and Data Science."
+    },
+    "Nav": {
+        "home": "Home",
+        "about": "About",
+        "works": "Works",
+        "contact": "Contact",
+        "fullName": "Hirun Chatcharoensawat"
+    },
+    "Hero": {
+        "greeting": "Hello, I am",
+        "name": "Hirun",
+        "role": "AI Engineer & Full Stack Developer",
+        "description": "Passionate about AI and LLMs. Turning complex data into intelligent solutions and crafting seamless digital experiences.",
+        "cta": "View My Work",
+        "contact": "Contact Me"
+    },
+    "About": {
+        "title": "About Me",
+        "description": "I am passionate about AI, continuously expanding my knowledge, and eager to apply the latest advancements to real-world projects. Currently focusing my studies on Large Language Models (LLMs) and their applications in creating innovative, impactful solutions.",
+        "skills": "Key Skills",
+        "educationTitle": "Education",
+        "education": [
+            {
+                "institution": "Suan Dusit University",
+                "degree": "Computer Science",
+                "year": "05/2025",
+                "grade": "GPA: 3.5"
+            }
+        ],
+        "certificatesTitle": "Certificates",
+        "certificates": [
+            {
+                "name": "IBM Data Science Professional",
+                "issuer": "Coursera",
+                "year": "2025"
+            }
+        ]
+    },
+    "Portfolio": {
+        "title": "Professional & Projects",
+        "viewProject": "View",
+        "projects": [
+            {
+                "id": "bot",
+                "title": "Bank of Thailand",
+                "role": "Database Migration",
+                "year": "2023",
+                "description": "Migrated the database from the legacy website to the new platform, ensuring data integrity and consistency.",
+                "tech": "SQL, Database Management, Migration Tools",
+                "color": "#3b82f6"
+            },
+            {
+                "id": "trading",
+                "title": "Trading Tax & Cash Flow Calculator",
+                "role": "Full Stack Dev",
+                "year": "2024",
+                "description": "Track daily trading transactions, monitor cash flow (inflow/outflow), and automate tax calculations/deductions.",
+                "tech": "React, Node.js, Fintech",
+                "color": "#10b981"
+            },
+            {
+                "id": "news",
+                "title": "News Website Maintenance",
+                "role": "Optimization",
+                "year": "2025",
+                "description": "Enhanced user experience (UX) and navigation to improve usability. Upgraded system architecture for modern web tech.",
+                "tech": "Next.js, UI/UX, Performance",
+                "color": "#f59e0b"
+            },
+            {
+                "id": "recipe",
+                "title": "Smart Recipe Recommender",
+                "role": "Final Year Project",
+                "year": "2025",
+                "description": "Developed a recipe recommendation system based on available ingredients using content-based filtering and verified datasets.",
+                "tech": "Python, Machine Learning, Recommendation Systems",
+                "color": "#ec4899"
+            },
+            {
+                "id": "data",
+                "title": "Data Analysis Experience",
+                "role": "Data Analyst",
+                "year": "2025",
+                "description": "Conducted sales data analysis and evaluated models like Decision Trees using Kaggle datasets for business insights.",
+                "tech": "Python, Pandas, Scikit-learn, Tableau",
+                "color": "#8b5cf6"
+            }
+        ]
+    },
+    "Contact": {
+        "title": "Get in Touch",
+        "info": "Contact Info",
+        "email": "hirunchatcharoensawat@gmail.com",
+        "phone": "0865624967",
+        "address": "10270, Mueang, Samut Prakan",
+        "cta": "Let's build something amazing together."
+    },
+    "Footer": {
+        "copyright": "© 2026 Hirun Chatcharoensawat. All rights reserved."
+    }
+}

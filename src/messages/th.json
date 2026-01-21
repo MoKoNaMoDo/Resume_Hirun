@@ -1,0 +1,105 @@
+{
+    "Meta": {
+        "title": "Hirun Chatcharoensawat | AI Engineer & Full Stack Developer",
+        "description": "พอร์ตฟอลิโอของ Hirun - AI Engineer และ Full Stack Developer ผู้เชี่ยวชาญด้าน LLMs, Modern Web และ Data Science"
+    },
+    "Nav": {
+        "home": "หน้าแรก",
+        "about": "เกี่ยวกับ",
+        "works": "ผลงาน",
+        "contact": "ติดต่อ",
+        "fullName": "หิรัญ ฉัตรเจริญสวัสดิ์"
+    },
+    "Hero": {
+        "greeting": "สวัสดีครับ, ผมคือ",
+        "name": "หิรัญ",
+        "role": "AI Engineer & Full Stack Developer",
+        "description": "หลงใหลใน AI และ LLMs มุ่งมั่นที่จะเปลี่ยนข้อมูลที่ซับซ้อนให้เป็นโซลูชันที่ชาญฉลาด และสร้างสรรค์ประสบการณ์ดิจิทัลที่ไร้รอยต่อ",
+        "cta": "ดูผลงานของผม",
+        "contact": "ติดต่อผม"
+    },
+    "About": {
+        "title": "เกี่ยวกับผม",
+        "description": "ผมมีความมุ่งมั่นในด้าน AI และเรียนรู้สิ่งใหม่อย่างต่อเนื่อง เพื่อนำเทคโนโลยีล่าสุดมาประยุกต์ใช้ในโปรเจคจริง ปัจจุบันกำลังโฟกัสการศึกษาด้าน Large Language Models (LLMs) และการนำไปใช้สร้างนวัตกรรมที่มีผลกระทบเชิงบวก",
+        "skills": "ทักษะที่เชี่ยวชาญ",
+        "educationTitle": "การศึกษา",
+        "education": [
+            {
+                "institution": "มหาวิทยาลัยสวนดุสิต",
+                "degree": "วิทยาการคอมพิวเตอร์",
+                "year": "05/2025",
+                "grade": "GPA: 3.5"
+            }
+        ],
+        "certificatesTitle": "ใบรับรอง",
+        "certificates": [
+            {
+                "name": "IBM Data Science Professional",
+                "issuer": "Coursera",
+                "year": "2025"
+            }
+        ]
+    },
+    "Portfolio": {
+        "title": "ประสบการณ์และโปรเจค",
+        "viewProject": "ดูรายละเอียด",
+        "projects": [
+            {
+                "id": "bot",
+                "title": "ธนาคารแห่งประเทศไทย (Bank of Thailand)",
+                "role": "Database Migration",
+                "year": "2023",
+                "description": "ย้ายฐานข้อมูลจากเว็บไซต์ระบบเก่า (Legacy) ไปยังแพลตฟอร์มใหม่ เพื่อให้ข้อมูลมีความถูกต้องและครบถ้วน",
+                "tech": "SQL, Database Management, Migration Tools",
+                "color": "#3b82f6"
+            },
+            {
+                "id": "trading",
+                "title": "โปรแกรมคำนวณภาษีเทรด & Cash Flow",
+                "role": "Full Stack Dev",
+                "year": "2024",
+                "description": "ติดตามธุรกรรมการเทรดรายวัน และตรวจสอบกระแสเงินสด (เข้า/ออก) พร้อมระบบคำนวณและหักภาษีอัตโนมัติ",
+                "tech": "React, Node.js, Fintech",
+                "color": "#10b981"
+            },
+            {
+                "id": "news",
+                "title": "ปรับปรุงและดูแลเว็บไซต์ข่าว",
+                "role": "Optimization",
+                "year": "2025",
+                "description": "ยกระดับประสบการณ์ผู้ใช้ (UX) และการนำทางของเว็บ ปรับปรุงสถาปัตยกรรมระบบเพื่อรองรับเทคโนโลยีเว็บสมัยใหม่",
+                "tech": "Next.js, UI/UX, Performance",
+                "color": "#f59e0b"
+            },
+            {
+                "id": "recipe",
+                "title": "ระบบแนะนำสูตรอาหารอัจฉริยะ",
+                "role": "Final Year Project",
+                "year": "2025",
+                "description": "พัฒนาระบบแนะนำเมนูอาหารจากวัตถุดิบที่มีอยู่ โดยใช้เทคนิค Content-based filtering และชุดข้อมูลที่ผ่านการตรวจสอบ",
+                "tech": "Python, Machine Learning, Recommendation Systems",
+                "color": "#ec4899"
+            },
+            {
+                "id": "data",
+                "title": "ประสบการณ์วิเคราะห์ข้อมูล",
+                "role": "Data Analyst",
+                "year": "2025",
+                "description": "วิเคราะห์ข้อมูลการขายและประเมินโมเดล เช่น Decision Trees โดยใช้ชุดข้อมูลจาก Kaggle เพื่อหา Insight ทางธุรกิจ",
+                "tech": "Python, Pandas, Scikit-learn, Tableau",
+                "color": "#8b5cf6"
+            }
+        ]
+    },
+    "Contact": {
+        "title": "ติดต่อผม",
+        "info": "ข้อมูลติดต่อ",
+        "email": "hirunchatcharoensawat@gmail.com",
+        "phone": "0865624967",
+        "address": "10270, เมือง, สมุทรปราการ",
+        "cta": "มาร่วมสร้างสรรค์ผลงานที่ยอดเยี่ยมด้วยกัน"
+    },
+    "Footer": {
+        "copyright": "© 2026 Hirun Chatcharoensawat. สงวนลิขสิทธิ์."
+    }
+}
