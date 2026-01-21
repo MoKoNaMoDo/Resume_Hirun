@@ -42,11 +42,11 @@ export default function Hero() {
                         SYSTEM ONLINE
                     </div>
 
-                    <h1 className="text-5xl lg:text-7xl font-bold mb-4 tracking-tight leading-tight">
+                    <h1 className="text-5xl lg:text-7xl font-bold mb-12 tracking-tight leading-tight">
                         {t('greeting')} <br />
                         <span className="text-white relative inline-block">
                             {t('name')}
-                            <span className="absolute -bottom-2 left-0 w-full h-1 bg-accent transform scale-x-0 animate-slide-in-right origin-left"></span>
+                            <span className="absolute -bottom-5 left-0 w-full h-1 bg-accent transform scale-x-0 animate-slide-in-right origin-left"></span>
                         </span>
                     </h1>
 
