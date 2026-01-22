@@ -32,10 +32,10 @@ export default function About() {
     const eduKeys = ['edu1'];
 
     return (
-        <section id="about" className="section py-32 relative">
+        <section id="about" className="section py-16 md:py-32 relative">
             <div className="container">
-                <h2 className="text-4xl font-bold mb-16 flex items-center gap-4">
-                    <span className="w-12 h-[2px] bg-accent"></span>
+                <h2 className="text-3xl md:text-4xl font-bold mb-10 md:mb-16 flex items-center gap-4">
+                    <span className="w-8 md:w-12 h-[2px] bg-accent"></span>
                     <span className="gradient-text">{t('title')}</span>
                 </h2>
 

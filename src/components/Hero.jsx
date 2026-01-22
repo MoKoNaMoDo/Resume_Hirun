@@ -30,36 +30,36 @@ export default function Hero() {
             {/* Cyberpunk Grid Background */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(15,23,42,0.9)_1px,transparent_1px),linear-gradient(90deg,rgba(15,23,42,0.9)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_0%,#000_70%,transparent_100%)] opacity-20 pointer-events-none"></div>
 
-            <div className="container relative z-10 grid lg:grid-cols-2 gap-12 lg:gap-24 items-center">
+            <div className="container relative z-10 grid lg:grid-cols-2 gap-8 lg:gap-24 items-center">
                 {/* Text Content (Left) */}
-                <div className="text-content order-2 lg:order-1 animate-fade-in-up relative">
+                <div className="text-content order-2 lg:order-1 animate-fade-in-up relative text-center lg:text-left">
                     {/* Decorative Tech Lines */}
                     <div className="absolute -left-8 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-accent/50 to-transparent hidden lg:block"></div>
                     <div className="absolute -left-8 top-10 w-4 h-[1px] bg-accent hidden lg:block shadow-[0_0_10px_var(--accent)]"></div>
 
-                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded border border-accent/30 bg-accent/10 text-accent text-sm font-mono mb-6 backdrop-blur-md">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded border border-accent/30 bg-accent/10 text-accent text-sm font-mono mb-6 backdrop-blur-md mx-auto lg:mx-0">
                         <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
                         SYSTEM ONLINE
                     </div>
 
-                    <h1 className="text-5xl lg:text-7xl font-bold mb-12 tracking-tight leading-tight">
+                    <h1 className="text-4xl md:text-5xl lg:text-7xl font-bold mb-8 md:mb-12 tracking-tight leading-tight">
                         {t('greeting')} <br />
                         <span className="text-white relative inline-block">
                             {t('name')}
-                            <span className="absolute -bottom-5 left-0 w-full h-1 bg-accent transform scale-x-0 animate-slide-in-right origin-left"></span>
+                            <span className="absolute -bottom-3 md:-bottom-5 left-0 w-full h-1 bg-accent transform scale-x-0 animate-slide-in-right origin-left"></span>
                         </span>
                     </h1>
 
-                    <h2 className="text-2xl lg:text-3xl text-slate-400 mb-8 font-mono h-8 flex items-center">
+                    <h2 className="text-xl md:text-2xl lg:text-3xl text-slate-400 mb-8 font-mono h-8 flex items-center justify-center lg:justify-start">
                         <span className="text-accent mr-2">{'>'}</span>
                         {text}<span className="animate-blink ml-1 w-3 h-6 bg-accent block"></span>
                     </h2>
 
-                    <p className="text-slate-400 text-lg leading-relaxed max-w-xl mb-10 border-l-2 border-slate-700 pl-6">
+                    <p className="text-slate-400 text-base md:text-lg leading-relaxed max-w-xl mb-8 md:mb-10 border-l-2 border-slate-700 pl-6 mx-auto lg:mx-0 text-left">
                         {t('description')}
                     </p>
 
-                    <div className="flex flex-wrap gap-4">
+                    <div className="flex flex-wrap gap-4 justify-center lg:justify-start">
                         <a href="#portfolio" className="btn btn-primary group relative overflow-hidden">
                             <span className="relative z-10">{t('cta')}</span>
                         </a>

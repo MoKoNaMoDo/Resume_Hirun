@@ -12,13 +12,13 @@ export default function Portfolio() {
     ];
 
     return (
-        <section id="portfolio" className="section py-32 bg-[#0a0a19]/50 relative">
+        <section id="portfolio" className="section py-16 md:py-32 bg-[#0a0a19]/50 relative">
             {/* Background Grid */}
             <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:2rem_2rem] pointer-events-none"></div>
 
             <div className="container relative z-10">
-                <div className="text-center mb-20">
-                    <h2 className="text-4xl lg:text-5xl font-bold mb-4 gradient-text inline-block">
+                <div className="text-center mb-10 md:mb-20">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gradient-text inline-block">
                         {t('title')}
                     </h2>
                     <div className="h-1 w-24 bg-accent mx-auto rounded-full mt-2"></div>
