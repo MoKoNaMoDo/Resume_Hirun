@@ -15,11 +15,11 @@ export default function About() {
         },
         {
             title: t('skill_categories.backend'),
-            items: ["MongoDB", "MySQL Database", "Supabase"]
+            items: ["MongoDB", "MySQL Database", "Supabase", "PostgreSQL", "Docker"]
         },
         {
             title: t('skill_categories.ai_data'),
-            items: ["LLM", "RAG", "K-means", "Decision Tree", "Recommendation System", "ChatGPT", "Claude", "Gemini API", "Huggingface"]
+            items: ["LLM", "RAG", "K-means", "Decision Tree", "Recommendation System", "Huggingface"]
         },
         {
             title: t('skill_categories.tools'),
