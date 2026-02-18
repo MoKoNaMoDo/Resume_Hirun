@@ -37,12 +37,12 @@ export default function Contact() {
                         <div className="p-8 rounded-3xl bg-white/5 border border-white/5 backdrop-blur-sm">
                             <h3 className="text-slate-400 text-sm font-mono mb-6 uppercase tracking-widest">Social & Profiles</h3>
                             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                                <SocialLink label="GitHub" href="https://github.com/MoKoNaMoDo" username="MoKoNaMoDo" color="hover:text-white" />
+                                <SocialLink label="GitHub" href="https://github.com/MoKoNaMoDo" username="MoKoNaMoDo" color="hover:text-white" iconColor="text-white" />
                                 <SocialLink label="Hugging Face" href="https://huggingface.co/Hirun9" username="Hirun9" color="hover:text-yellow-400" />
-                                <SocialLink label="Kaggle" href="https://www.kaggle.com/meaowmeawo" username="meaowmeawo" color="hover:text-blue-400" />
-                                <SocialLink label="LinkedIn" href="https://www.linkedin.com/in/hirun-chatcharoensawat" username="Hirun" color="hover:text-blue-500" />
-                                <SocialLink label="Facebook" href="https://www.facebook.com/HirunChaichareonswad" username="Hirun" color="hover:text-blue-600" />
-                                <SocialLink label="Instagram" href="https://www.instagram.com/p_nurih" username="@p_nurih" color="hover:text-pink-500" />
+                                <SocialLink label="Kaggle" href="https://www.kaggle.com/meaowmeawo" username="meaowmeawo" color="hover:text-blue-400" iconColor="text-blue-400" />
+                                <SocialLink label="LinkedIn" href="https://www.linkedin.com/in/hirun-chatcharoensawat" username="Hirun" color="hover:text-blue-500" iconColor="text-blue-600" />
+                                <SocialLink label="Facebook" href="https://www.facebook.com/HirunChaichareonswad" username="Hirun" color="hover:text-blue-600" iconColor="text-blue-500" />
+                                <SocialLink label="Instagram" href="https://www.instagram.com/p_nurih" username="@p_nurih" color="hover:text-pink-500" iconColor="text-pink-500" />
                             </div>
                         </div>
                     </div>
@@ -61,11 +61,11 @@ export default function Contact() {
     );
 }
 
-function SocialLink({ label, href, username, color }) {
+function SocialLink({ label, href, username, color, iconColor }) {
     return (
         <a href={href} target="_blank" rel="noopener noreferrer" className={`flex items-center justify-between p-4 rounded-xl bg-white/5 hover:bg-white/10 transition-all group ${color}`}>
             <div className="flex items-center gap-3">
-                <div className="w-8 h-8 rounded-full bg-black/50 flex items-center justify-center font-bold text-slate-400 group-hover:text-white transition-colors">
+                <div className={`w-8 h-8 rounded-full bg-black/50 flex items-center justify-center font-bold transition-colors ${iconColor ? iconColor : 'text-slate-400'} group-hover:text-white`}>
                     {getSocialIcon(label)}
                 </div>
                 <div className="flex flex-col">
