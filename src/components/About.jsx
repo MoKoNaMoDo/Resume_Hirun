@@ -15,7 +15,7 @@ export default function About() {
         },
         {
             title: t('skill_categories.backend'),
-            items: ["MongoDB", "MySQL Database", "Supabase", "PostgreSQL", "Docker"]
+            items: ["MongoDB", "MySQL Database", "Supabase", "PostgreSQL", "Docker", "AWS Lightsail"]
         },
         {
             title: t('skill_categories.ai_data'),
@@ -23,7 +23,7 @@ export default function About() {
         },
         {
             title: t('skill_categories.tools'),
-            items: ["GitHub", "Docker", "Claude Code CLI", "MCP AI CLI", "Runpod", "Google Colab", "Kaggle", "Weka"]
+            items: ["GitHub", "Postman", "CI/CD", "Claude Code CLI", "MCP AI CLI", "Runpod", "Google Colab", "Kaggle", "Weka"]
         }
     ];
 
