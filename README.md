@@ -17,8 +17,8 @@ Open [http://localhost:3000](http://localhost:3000).
 src/
 ├── app/[locale]/        # layout.jsx + page.jsx (one page, composed of sections)
 ├── components/
-│   ├── layout/          # Navbar
-│   ├── sections/        # Hero, About, Portfolio, Contact
+│   ├── layout/          # Navbar, SectionHeader
+│   ├── sections/        # Hero, Experience, Portfolio (+ GitHubActivity), Skills, Contact
 │   └── icons/           # SocialIcon (inline SVGs)
 ├── data/profile.js      # Skills, projects, contact info, social links
 ├── i18n/

@@ -5,24 +5,23 @@
  * ส่วนข้อความที่ต้องมี 2 ภาษา (ชื่องาน, คำอธิบาย) → อยู่ใน src/messages/th.json และ en.json
  */
 
-// ทักษะ แบ่งเป็นหมวด → โชว์ในส่วน 'เกี่ยวกับ' (About.jsx)
+// ทักษะ แบ่งเป็นหมวด → โชว์ในส่วน 'ทักษะ' (Skills.jsx) — ควรตรงกับใน CV
 // ชื่อหมวดภาษาไทย/อังกฤษ อยู่ใน messages → skill_categories
 export const skillCategories = [
-    { key: 'programming', items: ['Python', 'JavaScript'] },
-    { key: 'frontend', items: ['HTML', 'Tailwind CSS', 'React.js', 'Next.js'] },
-    { key: 'backend', items: ['Node.js', 'MongoDB', 'MySQL Database', 'Supabase', 'PostgreSQL', 'Docker', 'AWS Lightsail'] },
-    { key: 'ai_data', items: ['LLM', 'RAG', 'K-means', 'Decision Tree', 'Recommendation System', 'Huggingface'] },
-    { key: 'tools', items: ['GitHub', 'Postman', 'CI/CD', 'Claude Code CLI', 'MCP AI CLI', 'Runpod', 'Google Colab', 'Kaggle', 'Weka'] },
+    { key: 'programming', items: ['Python', 'JavaScript', 'TypeScript'] },
+    { key: 'frontend', items: ['React', 'Next.js', 'Tailwind CSS', 'HTML'] },
+    { key: 'backend', items: ['Node.js', 'Express', 'NestJS', 'PostgreSQL', 'MySQL', 'MongoDB', 'Supabase'] },
+    { key: 'ai_data', items: ['LLM', 'RAG', 'Prompt Engineering', 'Gemini API', 'OCR', 'Recommendation Systems', 'Hugging Face'] },
+    { key: 'tools', items: ['Git / GitHub', 'Docker', 'CI/CD', 'Postman', 'AWS Lightsail', 'Vercel', 'Figma', 'Claude Code', 'MCP'] },
 ];
 
 // รหัสของประสบการณ์ทำงาน / การศึกษา (รายละเอียดอยู่ใน messages → experience_list, education_list)
 export const experienceKeys = ['exp1', 'exp2', 'exp3', 'exp4'];
 export const educationKeys = ['edu1'];
 
-// ใบรับรอง → โชว์ในส่วน 'เกี่ยวกับ'
+// ใบรับรอง → โชว์ในส่วน 'ทักษะ' (Skills.jsx)
 export const certificates = [
-    'IBM Data Science Professional (2025)',
-    'IBM Data Science (Coursera)',
+    'IBM Data Science Professional Certificate (Coursera), 2025',
 ];
 
 // ผลงาน → โชว์เป็นการ์ดในส่วน 'ผลงาน' (Portfolio.jsx)
@@ -31,7 +30,7 @@ export const certificates = [
 // - live = ลิงก์เว็บจริง (ไม่มีก็ไม่ต้องใส่ ปุ่มจะไม่โชว์)
 // - category = หมวดของผลงาน ใช้กับแท็บด้านบน: 'client' (งานบริษัท/ลูกค้า), 'ai' (AI & Data), 'personal' (โปรเจกต์ส่วนตัว)
 // - featured: true = ผลงานเด่น ขึ้นแสดงก่อนผลงานอื่น
-// - จำนวนผลงานในนี้ จะไปโชว์เป็นตัวเลขบนรูปโปรไฟล์ด้วย
+// - จำนวนผลงาน (ทั้งหมด / งานบริษัท) จะไปโชว์เป็นตัวเลขในส่วนแรก (Hero.jsx) ด้วย
 export const projects = [
     {
         id: 'anandaBidding',
