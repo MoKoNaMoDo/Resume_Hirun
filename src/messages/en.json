@@ -1,25 +1,28 @@
 {
     "Meta": {
-        "title": "Resume Hirun | AI Engineer & Full Stack Developer",
-        "description": "Portfolio of Hirun - AI Engineer and Full Stack Developer specializing in LLM, Modern Web, and Machine Learning."
+        "title": "Hirun Chatcharoensawat | AI Engineer & Full Stack Developer",
+        "description": "Portfolio of Hirun Chatcharoensawat — AI Engineer and Full Stack Developer working with LLMs, web applications and machine learning."
     },
     "Nav": {
         "home": "Home",
         "about": "About",
-        "works": "Works",
+        "works": "Projects",
         "contact": "Contact"
     },
     "Hero": {
-        "greeting": "Hello, I am",
+        "greeting": "Hi, I'm",
         "name": "Hirun Chatcharoensawat",
         "role": "AI Engineer & Full Stack Developer",
-        "description": "Passionate about AI, continuously expanding my knowledge, and eager to apply the latest advancements to real-world projects. Currently focusing on Large Language Models (LLMs).",
+        "description": "I'm passionate about AI and always learning, with a focus on applying the latest advances to real-world projects — currently Large Language Models (LLMs).",
         "cta": "View My Work",
-        "contact": "Contact Me"
+        "contact": "Contact Me",
+        "resume": "Download Resume",
+        "stats_years": "Years Exp",
+        "stats_projects": "Projects"
     },
     "About": {
         "title": "About Me",
-        "description": "I am an AI Engineer and Full Stack Developer with a strong passion for Artificial Intelligence, specifically Large Language Models (LLMs). I combine this with modern web development expertise to build innovative and impactful solutions.",
+        "description": "I'm an AI Engineer and Full Stack Developer with a strong interest in Artificial Intelligence, especially Large Language Models (LLMs). I combine this with modern web development to build practical, reliable products.",
         "skills": "Skills & Expertise",
         "education": "Education",
         "experience": "Experience",
@@ -34,9 +37,9 @@
         },
         "education_list": {
             "edu1": {
-                "degree": "Computer Science (B.Sc.)",
+                "degree": "B.Sc. in Computer Science",
                 "school": "Suan Dusit University",
-                "year": "2025 (GPA: 3.50 Honor)",
+                "year": "2025 (GPA 3.50 · Second-Class Honors)",
                 "desc": "Faculty of Science and Technology"
             }
         },
@@ -44,68 +47,106 @@
             "exp1": {
                 "role": "AI Engineer",
                 "company": "Beatrix Co., Ltd.",
-                "year": "Oct 2026 - Present",
-                "desc": "Tested Alphalink systems, Optimized web performance, UX/UI Design (Figma), and developed auction web platform."
+                "year": "Oct 2025 - Present",
+                "desc": "Tested the Alphalink system, improved the performance of the thai-link website, designed UX/UI in Figma, and developed an online auction platform."
             },
             "exp2": {
                 "role": "AI Software Engineer",
                 "company": "Enabridge Co., Ltd.",
-                "year": "Jul 2026 - Sep 2026",
-                "desc": "Full Stack Dev, Prompt Engineering, Database Architecture, utilised AI CLI & MCP tools."
+                "year": "Jul 2025 - Sep 2025",
+                "desc": "Worked on full-stack development, prompt engineering and database design, using AI CLI and MCP tools."
             },
             "exp3": {
                 "role": "Frontend Developer",
                 "company": "Kaowna Broker",
-                "year": "Sep 2025 - Nov 2025",
+                "year": "Sep 2024 - Nov 2024",
                 "desc": "Developed financial and tax calculation websites."
             },
             "exp4": {
                 "role": "Frontend Developer (Intern)",
-                "company": "Strategy and Planning Office, SDU",
-                "year": "Jul 2025 - Aug 2025",
+                "company": "Strategy and Planning Office, Suan Dusit University",
+                "year": "Jul 2024 - Aug 2024",
                 "desc": "Developed university assessment systems and analyzed evaluation data."
             }
         }
     },
     "Portfolio": {
-        "title": "Selected Works",
-        "viewProject": "View Project",
+        "title": "Selected Projects",
+        "viewProject": "Live Demo",
         "projects": {
             "proj1": {
                 "title": "Smart Recipe Recommender",
                 "role": "Final Year Project",
-                "desc": "Recipe recommendation system based on available ingredients using Content-based filtering. Built Thai recipe datasets and integrated database for user preferences.",
-                "tech": "Python, Recommendation System, Database"
+                "desc": "Recommends recipes based on the ingredients you have, using content-based filtering. Built a Thai recipe dataset and a database to store user preferences."
             },
             "proj2": {
                 "title": "Trading Tax & Cash Flow Calculator",
                 "role": "Full Stack Developer",
-                "desc": "Automated tax calculation and deduction system for buy/sell activities. Tracks daily trading transactions and monitors cash flow (inflow/outflow).",
-                "tech": "Web Development, Calculation Logic, Dashboard"
+                "desc": "Automatically calculates taxes and deductions on buy and sell transactions, tracks daily trades, and monitors cash inflow and outflow."
             },
             "proj3": {
-                "title": "News Website Maintenance",
+                "title": "News Website Optimization",
                 "role": "Frontend Developer",
-                "desc": "Enhanced UX/navigation to improve usability and upgraded system architecture to support modern web technologies for a news platform.",
-                "tech": "Modern Web, UX/UI, Optimization"
+                "desc": "Improved UX and navigation on a news website and upgraded its architecture to support modern web technologies."
             },
             "proj4": {
                 "title": "Sales Data Analysis",
                 "role": "Data Analyst",
-                "desc": "Analyzed sales data for promotional campaigns and export strategies. Used Kaggle datasets and compared ML models (Decision Trees) to evaluate effectiveness.",
-                "tech": "Machine Learning, Data Analysis, Kaggle"
+                "desc": "Analyzed sales data for promotional campaigns and export strategies using Kaggle datasets, and compared machine learning models, including decision trees, to evaluate effectiveness."
+            },
+            "vns": {
+                "title": "V.N.S. Engineering Hydraulic",
+                "role": "Company Website",
+                "desc": "Bilingual company website for a manufacturer of hydraulic hose fittings and industrial connectors, with product catalog, company profile and contact pages."
+            },
+            "botMigration": {
+                "title": "Website Content Migration",
+                "role": "Bank of Thailand",
+                "desc": "Migrated website content from the legacy system to the new platform, including images, magazines/publications and text content, and checked that everything was complete and displayed correctly."
+            },
+            "anandaBidding": {
+                "title": "E-Bidding System — ANANDA",
+                "role": "Full Stack · via Beatrix",
+                "desc": "Online procurement bidding platform for sourcing projects, bidding events and supplier bids. My contributions: the event lifecycle (publish, edit, extend/shorten deadlines, close and reopen), supplier management (Excel import with validation, profiles, search), and the approval workflow with email notifications and Excel export. Also gathered feedback directly from the client and implemented the requested changes and fixes."
+            },
+            "tmmlWorkforce": {
+                "title": "Foreign Worker Management System — TMML",
+                "role": "Freelance",
+                "desc": "Back-office system for a labor recruitment company, covering employer and worker records, financial documents and contracts. Tested system functionality, reported bugs to the development team, and wrote the user documentation."
+            },
+            "pimmz": {
+                "title": "PIMMZ",
+                "role": "Web Application",
+                "desc": "Procurement club and business networking platform where members post buy/sell listings, services and training seminars, and connect with other businesses."
+            },
+            "myStocks": {
+                "title": "My Stocks",
+                "role": "Personal Project",
+                "desc": "Stock tracking and screening web app for US and Thai (SET) markets, built for DCA, dividend and growth investing. Features technical charts (SMA, RSI), a custom condition screener, a THB-based portfolio tracker, DCA backtesting, and LINE / Telegram alerts with a LINE chatbot for portfolio queries."
+            },
+            "clearBill": {
+                "title": "ClearBill",
+                "role": "AI Web Application",
+                "desc": "Expense reimbursement app that removes manual data entry. Snap a receipt or transfer slip and AI (Gemini Vision + OCR) extracts the amount, category and payer. Records are saved to Google Sheets with images in Google Drive. Includes an expense dashboard, printable reports with Excel export, and a monthly LINE summary sent to everyone with claims."
+            },
+            "ninjaCodeBug": {
+                "title": "NinjaCodeBug",
+                "role": "Personal Project",
+                "desc": "Portfolio hub and web development service site that showcases projects by category, with search, gallery-style detail pages, view counts and light/dark mode, plus an admin dashboard for managing projects and uploading images."
             }
-        }
+        },
+        "otherTitle": "Other Projects"
     },
     "Contact": {
         "title": "Get in Touch",
-        "title_hero": "Let's Work \nTogether.",
+        "title_hero": "Let's Work\nTogether.",
         "subtitle": "Interested in working together or have a question? Feel free to reach out.",
         "email": "Email",
-        "phone": "Phone",
-        "location": "Address",
         "github": "GitHub",
-        "linkedin": "LinkedIn"
+        "linkedin": "LinkedIn",
+        "resume": "Download Resume",
+        "phone": "Phone",
+        "profiles": "Contact & Profiles"
     },
     "Footer": {
         "copyright": "© 2026 Hirun Chatcharoensawat. All rights reserved."
