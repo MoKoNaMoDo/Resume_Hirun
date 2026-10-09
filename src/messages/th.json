@@ -135,7 +135,12 @@
                 "desc": "เว็บไซต์รวมผลงานและบริการรับทำเว็บ แสดงโปรเจกต์แยกตามหมวดหมู่ พร้อมระบบค้นหา หน้ารายละเอียดผลงานแบบแกลเลอรี ยอดเข้าชม และโหมดสว่าง/มืด มีระบบหลังบ้านสำหรับแอดมินจัดการผลงานและอัปโหลดรูป"
             }
         },
-        "otherTitle": "ผลงานอื่นๆ"
+        "categories": {
+            "all": "ทั้งหมด",
+            "client": "งานบริษัท / ลูกค้า",
+            "ai": "AI & Data",
+            "personal": "โปรเจกต์ส่วนตัว"
+        }
     },
     "Contact": {
         "title": "ติดต่อผม",
@@ -146,7 +151,17 @@
         "linkedin": "LinkedIn",
         "resume": "ดาวน์โหลด Resume",
         "phone": "โทรศัพท์",
-        "profiles": "ช่องทางติดต่อ"
+        "profiles": "ช่องทางติดต่อ",
+        "github_title": "กิจกรรมบน GitHub",
+        "github_less": "น้อย",
+        "github_more": "มาก",
+        "github_total_label": "contributions ในรอบ 1 ปี",
+        "github_active_days": "วันที่เขียนโค้ด",
+        "github_streak": "วันติดต่อกันสูงสุด",
+        "github_best_day": "มากสุดใน 1 วัน",
+        "github_mon": "จ.",
+        "github_wed": "พ.",
+        "github_fri": "ศ."
     },
     "Footer": {
         "copyright": "© 2026 Hirun Chatcharoensawat. สงวนลิขสิทธิ์."

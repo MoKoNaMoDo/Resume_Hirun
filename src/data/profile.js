@@ -29,34 +29,40 @@ export const certificates = [
 // - เรียงตามลำดับในนี้ (อันแรก = บนสุด)
 // - id ต้องตรงกับชื่อใน messages → projects (ที่เก็บชื่องาน + คำอธิบาย)
 // - live = ลิงก์เว็บจริง (ไม่มีก็ไม่ต้องใส่ ปุ่มจะไม่โชว์)
-// - featured: true = ผลงานเด่น โชว์เป็นการ์ดใหญ่ / ไม่ใส่ = ไปอยู่ในรายการ 'ผลงานอื่นๆ'
+// - category = หมวดของผลงาน ใช้กับแท็บด้านบน: 'client' (งานบริษัท/ลูกค้า), 'ai' (AI & Data), 'personal' (โปรเจกต์ส่วนตัว)
+// - featured: true = ผลงานเด่น ขึ้นแสดงก่อนผลงานอื่น
 // - จำนวนผลงานในนี้ จะไปโชว์เป็นตัวเลขบนรูปโปรไฟล์ด้วย
 export const projects = [
     {
         id: 'anandaBidding',
+        category: 'client',
         featured: true,
         year: '2025–2026',
         tech: ['Next.js', 'NestJS', 'PostgreSQL', 'TypeORM', 'Docker'],
     },
     {
         id: 'tmmlWorkforce',
+        category: 'client',
         year: '2026',
         tech: ['Testing', 'Bug Reporting', 'Documentation'],
     },
     {
         id: 'myStocks',
+        category: 'personal',
         featured: true,
         year: '2026',
         tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Drizzle ORM', 'LINE Messaging API', 'Vitest'],
     },
     {
         id: 'clearBill',
+        category: 'ai',
         featured: true,
         year: '2026',
         tech: ['React', 'TypeScript', 'Express', 'Gemini Vision', 'Tesseract OCR', 'Google Sheets API', 'LINE Messaging API'],
     },
     {
         id: 'ninjaCodeBug',
+        category: 'personal',
         featured: true,
         year: '2026',
         tech: ['Next.js', 'Express', 'Prisma', 'PostgreSQL', 'Supabase', 'Docker'],
@@ -64,6 +70,7 @@ export const projects = [
     },
     {
         id: 'pimmz',
+        category: 'client',
         featured: true,
         year: '2026',
         tech: ['React', 'Vite', 'Material UI'],
@@ -71,6 +78,7 @@ export const projects = [
     },
     {
         id: 'vns',
+        category: 'client',
         featured: true,
         year: '2026',
         tech: ['Next.js', 'next-intl', 'Supabase', 'Tailwind CSS'],
@@ -78,32 +86,40 @@ export const projects = [
     },
     {
         id: 'proj1',
+        category: 'ai',
         year: '2025',
         tech: ['Python', 'Content-based Filtering', 'Database'],
     },
     {
         id: 'proj4',
+        category: 'ai',
         year: '2025',
         tech: ['Machine Learning', 'Decision Tree', 'Kaggle'],
     },
     {
         id: 'proj3',
+        category: 'client',
         year: '2025',
         tech: ['UX/UI', 'Web Performance'],
     },
     {
         id: 'proj2',
+        category: 'client',
         year: '2024',
         tech: ['Web Application', 'Dashboard'],
     },
     {
         id: 'botMigration',
+        category: 'client',
         year: '2023',
         tech: ['Content Migration', 'Data Verification'],
     },
 ];
 
 // ไฟล์ CV ที่ปุ่ม 'ดาวน์โหลด Resume' ส่งให้ (ไฟล์อยู่ใน public/)
+// ลำดับแท็บหมวดหมู่ในส่วนผลงาน ('all' = ทั้งหมด) ชื่อแท็บอยู่ใน messages → Portfolio.categories
+export const projectCategories = ['all', 'client', 'ai', 'personal'];
+
 export const resumeFile = '/Hirun_Chatcharoensawat_Resume.pdf';
 
 // ข้อมูลติดต่อ → โชว์ในส่วน 'ติดต่อ' (Contact.jsx)

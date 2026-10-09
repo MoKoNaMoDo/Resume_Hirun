@@ -71,13 +71,9 @@ export default function Hero() {
 
                 {/* ฝั่งขวา: รูปโปรไฟล์ + ของตกแต่ง */}
                 <div className="visual order-1 lg:order-2 flex justify-center lg:justify-end relative">
-                    <div className="relative w-[200px] h-[200px] lg:w-[280px] lg:h-[280px] lg:mr-12">
+                    <div className="relative w-[240px] h-[240px] lg:w-[350px] lg:h-[350px] lg:mr-12">
                         {/* แสงฟุ้งด้านหลังรูป */}
-                        <div className="absolute -inset-10 rounded-full bg-gradient-to-tr from-accent/25 via-purple-500/15 to-transparent blur-3xl pointer-events-none"></div>
-
-                        {/* วงแหวนหมุนรอบรูป */}
-                        <div className="absolute inset-[-18px] rounded-full border border-slate-700/50 animate-spin-slow-reverse"></div>
-                        <div className="absolute inset-[-9px] rounded-full border border-dashed border-accent/30 animate-spin-slow"></div>
+                        <div className="absolute -inset-10 rounded-full bg-gradient-to-tr from-accent/15 via-purple-500/10 to-transparent blur-3xl pointer-events-none"></div>
 
                         {/* กรอบรูป (ขอบไล่สีฟ้า-ม่วง) */}
                         <div className="relative w-full h-full rounded-3xl p-[2px] bg-gradient-to-br from-accent/70 via-white/10 to-purple-500/70 shadow-[0_20px_60px_-15px_rgba(56,189,248,0.35)]">
@@ -88,9 +84,8 @@ export default function Hero() {
                                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                                 />
 
-                                {/* เงาด้านล่างรูป + เส้นสแกนวิ่งขึ้นลง */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent"></div>
-                                <div className="absolute top-0 left-0 w-full h-px bg-accent/40 shadow-[0_0_10px_var(--accent)] animate-scan"></div>
+                                {/* เงาจางๆ ด้านล่างรูป */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/40 via-transparent to-transparent"></div>
 
                                 {/* มุมกรอบสีฟ้า */}
                                 <div className="absolute top-3 left-3 w-4 h-4 border-t-2 border-l-2 border-accent rounded-tl"></div>
@@ -100,14 +95,14 @@ export default function Hero() {
 
                         {/* ป้ายตัวเลขลอยๆ (จอใหญ่เท่านั้น มือถือซ่อน) */}
                         <StatCard
-                            className="-right-14 top-8 animate-float"
+                            className="-right-16 top-[55%] animate-float" // อยู่ขอบขวาช่วงกลางรูป ไม่บังหน้า
                             tone="blue"
                             icon={<BriefcaseIcon />}
                             value="1.5+"
                             label={t('stats_years')}
                         />
                         <StatCard
-                            className="-left-14 bottom-8 animate-float-delayed"
+                            className="-left-16 bottom-6 animate-float-delayed"
                             tone="purple"
                             icon={<LayersIcon />}
                             value={projects.length} // นับจำนวนผลงานใน profile.js ให้อัตโนมัติ

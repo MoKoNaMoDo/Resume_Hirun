@@ -1,20 +1,26 @@
+'use client'; // ทำงานบนเบราว์เซอร์ เพราะมีแท็บให้กดเลือกหมวด
+
 /**
  * Portfolio.jsx — ส่วน 'ผลงาน'
  *
- * ด้านบน: ผลงานเด่น (featured) เป็นการ์ดใหญ่
- * ด้านล่าง: ผลงานอื่นๆ เป็นรายการบรรทัดเดียว กดแล้วกางรายละเอียดออกมาได้
+ * แท็บด้านบน: เลือกดูตามหมวด (ทั้งหมด / งานบริษัท / AI & Data / ส่วนตัว)
+ * ผลงานทุกชิ้นเป็นการ์ด เรียงผลงานเด่น (featured) ขึ้นก่อน
  * รายการผลงาน (ลำดับ, ปี, tech, ลิงก์) มาจาก → src/data/profile.js
  * ชื่องาน + คำอธิบาย 2 ภาษา มาจาก → messages ส่วน 'Portfolio'
+ * ท้ายส่วน: กราฟ GitHub (ส่งเข้ามาจาก page.jsx เพราะต้องดึงข้อมูลฝั่ง server)
  */
+import { useState } from 'react';
 import { useTranslations } from 'next-intl';
-import { projects } from '@/data/profile';
+import { projects, projectCategories } from '@/data/profile';
 
-// แยกผลงานเป็น 2 กลุ่ม ตามค่า featured ใน profile.js
-const featuredProjects = projects.filter((p) => p.featured);
-const otherProjects = projects.filter((p) => !p.featured);
-
-export default function Portfolio() {
+// children = ส่วนเสริมท้ายผลงาน (ตอนนี้คือกราฟ GitHub ส่งมาจาก page.jsx)
+export default function Portfolio({ children }) {
     const t = useTranslations('Portfolio');
+    const [category, setCategory] = useState('all'); // แท็บที่เลือกอยู่
+
+    // กรองผลงานตามแท็บที่เลือก แล้วเรียงผลงานเด่นขึ้นก่อน (ที่เหลือเรียงตามลำดับใน profile.js)
+    const visible = category === 'all' ? projects : projects.filter((p) => p.category === category);
+    const sortedProjects = [...visible.filter((p) => p.featured), ...visible.filter((p) => !p.featured)];
 
     return (
         <section id="portfolio" className="section py-16 md:py-32 bg-[#0a0a19]/50 relative">
@@ -26,9 +32,28 @@ export default function Portfolio() {
                     <div className="h-1 w-24 bg-accent mx-auto rounded-full mt-2"></div>
                 </div>
 
-                {/* ผลงานเด่น: การ์ดใหญ่ */}
+                {/* แท็บหมวดหมู่: กดแล้วเหลือเฉพาะผลงานในหมวดนั้น */}
+                <div className="flex flex-wrap justify-center gap-2 mb-10" role="tablist">
+                    {projectCategories.map((key) => {
+                        const count = key === 'all' ? projects.length : projects.filter((p) => p.category === key).length;
+                        const active = category === key;
+                        return (
+                            <button
+                                key={key}
+                                role="tab"
+                                aria-selected={active}
+                                onClick={() => setCategory(key)}
+                                className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${active ? 'bg-accent text-black border-accent' : 'border-white/10 text-slate-400 hover:text-white hover:border-white/30'}`}
+                            >
+                                {t(`categories.${key}`)} <span className={active ? 'text-black/60' : 'text-slate-600'}>{count}</span>
+                            </button>
+                        );
+                    })}
+                </div>
+
+                {/* การ์ดผลงานทั้งหมดในหมวดที่เลือก */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {featuredProjects.map((project) => (
+                    {sortedProjects.map((project) => (
                         <article key={project.id} className="glass-card flex flex-col h-full p-7">
                             <div className="flex items-center justify-between mb-4 text-xs font-mono">
                                 <span className="text-accent uppercase tracking-wider">{t(`projects.${project.id}.role`)}</span>
@@ -59,53 +84,8 @@ export default function Portfolio() {
                     ))}
                 </div>
 
-                {/* ผลงานอื่นๆ: รายการแบบย่อ บรรทัดละ 1 งาน (กดเพื่อดูรายละเอียด) */}
-                {otherProjects.length > 0 && (
-                    <div className="mt-16">
-                        <h3 className="text-sm font-mono text-slate-500 uppercase tracking-widest mb-4">
-                            {t('otherTitle')}
-                        </h3>
-                        <ul className="divide-y divide-white/5 border-y border-white/5">
-                            {otherProjects.map((project) => (
-                                <li key={project.id}>
-                                    {/* กดที่แถว → กางรายละเอียดออก / กดอีกที → พับเก็บ */}
-                                    <details className="group">
-                                        <summary className="py-4 flex flex-col md:flex-row md:items-center gap-1 md:gap-6 cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-white/[0.02] transition-colors">
-                                            <span className="text-white font-medium md:w-80 shrink-0">
-                                                {t(`projects.${project.id}.title`)}
-                                            </span>
-                                            <span className="text-sm text-slate-400 flex-1">
-                                                {t(`projects.${project.id}.role`)}
-                                            </span>
-                                            <span className="flex items-center gap-4">
-                                                <span className="text-xs font-mono text-slate-500">{project.year}</span>
-                                                {/* ลูกศร: หมุนลงตอนกางออก */}
-                                                <span className="text-accent transition-transform duration-300 group-open:rotate-180">▾</span>
-                                            </span>
-                                        </summary>
-
-                                        {/* รายละเอียดที่ซ่อนไว้: คำอธิบาย + แท็ก + ลิงก์ (ถ้ามี) */}
-                                        <div className="pb-5 md:pl-[21.5rem] md:pr-10">
-                                            <p className="text-slate-400 text-sm leading-relaxed mb-4">
-                                                {t(`projects.${project.id}.desc`)}
-                                            </p>
-                                            <div className="flex flex-wrap gap-2">
-                                                {project.tech.map((tech) => (
-                                                    <span key={tech} className="chip">{tech}</span>
-                                                ))}
-                                            </div>
-                                            {project.live && (
-                                                <div className="mt-4 text-sm font-medium">
-                                                    <ProjectLink href={project.live} label={t('viewProject')} />
-                                                </div>
-                                            )}
-                                        </div>
-                                    </details>
-                                </li>
-                            ))}
-                        </ul>
-                    </div>
-                )}
+                {/* ส่วนเสริมท้ายผลงาน: กราฟกิจกรรม GitHub */}
+                {children}
             </div>
         </section>
     );

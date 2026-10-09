@@ -9,6 +9,7 @@ import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Portfolio from '@/components/sections/Portfolio';
 import Contact from '@/components/sections/Contact';
+import GitHubActivity from '@/components/sections/GitHubActivity';
 
 export default function Home() {
     return (
@@ -16,7 +17,9 @@ export default function Home() {
             <Navbar />     {/* เมนูด้านบน */}
             <Hero />       {/* ส่วนแรก: ชื่อ + รูป + ปุ่มดาวน์โหลด Resume */}
             <About />      {/* เกี่ยวกับ: ประสบการณ์ การศึกษา ทักษะ */}
-            <Portfolio />  {/* ผลงาน */}
+            <Portfolio>    {/* ผลงาน + กราฟ GitHub ต่อท้าย */}
+                <GitHubActivity />
+            </Portfolio>
             <Contact />    {/* ติดต่อ + ท้ายเว็บ */}
         </main>
     );

@@ -7,6 +7,7 @@
 import { defineRouting } from 'next-intl/routing';
 
 export const routing = defineRouting({
-    locales: ['th', 'en'],   // ภาษาที่รองรับ (ลำดับนี้ = ลำดับปุ่มบน Navbar)
-    defaultLocale: 'th'      // ภาษาเริ่มต้น เมื่อเข้าเว็บโดยไม่ระบุภาษา
+    locales: ['en', 'th'],   // ภาษาที่รองรับ (ลำดับนี้ = ลำดับปุ่มบน Navbar)
+    defaultLocale: 'en',     // ภาษาเริ่มต้น เมื่อเข้าเว็บโดยไม่ระบุภาษา
+    localeDetection: false   // ไม่เดาภาษาจากเบราว์เซอร์ → เข้า "/" แล้วไปภาษาอังกฤษเสมอ
 });

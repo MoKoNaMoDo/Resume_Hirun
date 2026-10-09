@@ -135,7 +135,12 @@
                 "desc": "Portfolio hub and web development service site that showcases projects by category, with search, gallery-style detail pages, view counts and light/dark mode, plus an admin dashboard for managing projects and uploading images."
             }
         },
-        "otherTitle": "Other Projects"
+        "categories": {
+            "all": "All",
+            "client": "Company & Client Work",
+            "ai": "AI & Data",
+            "personal": "Personal Projects"
+        }
     },
     "Contact": {
         "title": "Get in Touch",
@@ -146,7 +151,17 @@
         "linkedin": "LinkedIn",
         "resume": "Download Resume",
         "phone": "Phone",
-        "profiles": "Contact & Profiles"
+        "profiles": "Contact & Profiles",
+        "github_title": "GitHub Activity",
+        "github_less": "Less",
+        "github_more": "More",
+        "github_total_label": "contributions in the last year",
+        "github_active_days": "Active days",
+        "github_streak": "Longest streak",
+        "github_best_day": "Best day",
+        "github_mon": "Mon",
+        "github_wed": "Wed",
+        "github_fri": "Fri"
     },
     "Footer": {
         "copyright": "© 2026 Hirun Chatcharoensawat. All rights reserved."
