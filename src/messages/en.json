@@ -4,32 +4,29 @@
         "description": "Portfolio of Hirun Chatcharoensawat — AI Engineer and Full Stack Developer working with LLMs, web applications and machine learning."
     },
     "Nav": {
-        "home": "Home",
-        "about": "About",
-        "works": "Projects",
+        "experience": "Experience",
+        "projects": "Projects",
+        "skills": "Skills",
         "contact": "Contact"
     },
     "Hero": {
-        "greeting": "Hi, I'm",
         "name": "Hirun Chatcharoensawat",
-        "role": "AI Engineer & Full Stack Developer",
-        "description": "I'm passionate about AI and always learning, with a focus on applying the latest advances to real-world projects — currently Large Language Models (LLMs).",
-        "cta": "View My Work",
-        "contact": "Contact Me",
-        "resume": "Download Resume",
-        "stats_years": "Years Exp",
-        "stats_projects": "Projects"
+        "description": "I build web systems for companies and clients — from procurement and bidding platforms to internal tools — with Next.js, NestJS and PostgreSQL, and bring AI into real workflows where it saves time.",
+        "cta": "View projects",
+        "resume": "Download CV",
+        "stats_years": "Years of experience",
+        "stats_projects": "Projects in total",
+        "eyebrow": "Full Stack Developer · AI Engineer",
+        "stats_client": "Company & client projects"
     },
     "About": {
-        "title": "About Me",
         "description": "I'm an AI Engineer and Full Stack Developer with a strong interest in Artificial Intelligence, especially Large Language Models (LLMs). I combine this with modern web development to build practical, reliable products.",
         "skills": "Skills & Expertise",
         "education": "Education",
         "experience": "Experience",
         "certificates": "Certificates",
-        "tech_stack": "Technologies & Tools",
         "skill_categories": {
-            "programming": "Programming Languages",
+            "programming": "Languages",
             "frontend": "Frontend Development",
             "backend": "Backend & Database",
             "ai_data": "AI & Data Science",
@@ -71,7 +68,6 @@
         }
     },
     "Portfolio": {
-        "title": "Selected Projects",
         "viewProject": "Live Demo",
         "projects": {
             "proj1": {
@@ -149,7 +145,7 @@
         "email": "Email",
         "github": "GitHub",
         "linkedin": "LinkedIn",
-        "resume": "Download Resume",
+        "resume": "Download CV",
         "phone": "Phone",
         "profiles": "Contact & Profiles",
         "github_title": "GitHub Activity",
@@ -161,9 +157,22 @@
         "github_best_day": "Best day",
         "github_mon": "Mon",
         "github_wed": "Wed",
-        "github_fri": "Fri"
+        "github_fri": "Fri",
+        "send_email": "Send an email"
     },
     "Footer": {
-        "copyright": "© 2026 Hirun Chatcharoensawat. All rights reserved."
+        "copyright": "© 2026 Hirun Chatcharoensawat. All rights reserved.",
+        "built_with": "Built with Next.js & Tailwind CSS"
+    },
+    "Sections": {
+        "experience_eyebrow": "Experience",
+        "experience_title": "Where I've worked.",
+        "projects_eyebrow": "Projects",
+        "projects_title": "Selected work.",
+        "projects_subtitle": "Company systems, client websites and personal tools — filter by category below.",
+        "skills_eyebrow": "Skills",
+        "skills_title": "Tools I work with.",
+        "contact_eyebrow": "Contact",
+        "current": "Current"
     }
 }

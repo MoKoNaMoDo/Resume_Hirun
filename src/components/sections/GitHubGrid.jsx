@@ -77,15 +77,12 @@ export default function GitHubGrid({ weeks, months, total, stats, profileUrl, la
     return (
         <div
             ref={ref}
-            className="relative mt-16 p-6 md:p-8 rounded-3xl border border-white/10 bg-gradient-to-br from-white/[0.06] to-white/[0.02] overflow-hidden"
+            className="relative mt-16 p-6 md:p-8 card overflow-hidden hover:border-white/[0.08]"
         >
-            {/* แสงฟุ้งตกแต่งมุมกล่อง */}
-            <div className="absolute -top-24 -right-24 w-72 h-72 rounded-full bg-accent/10 blur-3xl pointer-events-none"></div>
-
             {/* หัวข้อ + ตัวเลขรวม */}
             <div className="relative flex flex-col md:flex-row md:items-end justify-between gap-4 mb-6">
                 <div>
-                    <h3 className="text-slate-400 text-xs font-mono uppercase tracking-widest mb-2">{labels.title}</h3>
+                    <h3 className="text-slate-500 text-xs font-mono uppercase tracking-[0.2em] mb-2">{labels.title}</h3>
                     <a
                         href={profileUrl}
                         target="_blank"
@@ -168,7 +165,7 @@ export default function GitHubGrid({ weeks, months, total, stats, profileUrl, la
 // กล่องตัวเลขสรุปเล็กๆ
 function Stat({ value, label }) {
     return (
-        <div className="px-4 py-3 rounded-2xl bg-white/[0.04] border border-white/5 text-center md:text-left">
+        <div className="px-4 py-3 rounded-xl bg-white/[0.03] border border-white/[0.06] text-center md:text-left">
             <div className="text-xl md:text-2xl font-bold text-white tabular-nums">{value.toLocaleString()}</div>
             <div className="text-[11px] text-slate-500 leading-tight mt-0.5">{label}</div>
         </div>

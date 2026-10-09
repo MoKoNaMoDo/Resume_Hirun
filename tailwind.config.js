@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+// ตั้งค่าหน้าตาหลักของเว็บ: สี + ฟอนต์ + อนิเมชันที่ใช้
 module.exports = {
     content: [
         "./src/**/*.{js,ts,jsx,tsx,mdx}",
@@ -6,55 +7,29 @@ module.exports = {
     theme: {
         extend: {
             colors: {
+                // พื้นหลังโทนมืด
                 background: {
-                    primary: "#050511",
-                    secondary: "#0f1123",
-                    tertiary: "#1a1d35",
+                    primary: "#0a0b0f",   // พื้นหลังหลัก
+                    secondary: "#111318", // พื้นหลังส่วนที่สลับสี
                 },
+                // สีเน้น ใช้สีเดียวทั้งเว็บ
                 accent: {
                     DEFAULT: "#38bdf8",
-                    secondary: "#a855f7",
-                    glow: "rgba(56, 189, 248, 0.6)",
                 },
             },
             fontFamily: {
-                sans: ['var(--font-outfit)', 'sans-serif'],
-                mono: ['var(--font-jetbrains-mono)', 'monospace'],
+                // อังกฤษใช้ Inter / ไทยใช้ IBM Plex Sans Thai (Inter ไม่มีตัวอักษรไทย)
+                sans: ['Inter', '"IBM Plex Sans Thai"', 'system-ui', 'sans-serif'],
+                mono: ['"JetBrains Mono"', 'monospace'],
             },
             animation: {
-                'spin-slow': 'spin 20s linear infinite',
-                'spin-slow-reverse': 'spin 25s linear infinite reverse',
-                'scan': 'scan 3s linear infinite',
-                'blink': 'blink 1s step-end infinite',
-                'float': 'float 6s ease-in-out infinite',
-                'float-delayed': 'float 6s ease-in-out infinite 3s',
-                'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
-                'slide-in-right': 'slideInRight 0.8s ease-out forwards 0.5s',
-                'fade-in-up': 'fadeInUp 0.8s ease-out forwards',
+                'fade-in-up': 'fadeInUp 0.7s ease-out both',
             },
             keyframes: {
-                scan: {
-                    '0%': { top: '0%', opacity: '0' },
-                    '10%': { opacity: '1' },
-                    '90%': { opacity: '1' },
-                    '100%': { top: '100%', opacity: '0' },
-                },
-                blink: {
-                    '0%, 100%': { opacity: '1' },
-                    '50%': { opacity: '0' },
-                },
-                float: {
-                    '0%, 100%': { transform: 'translateY(0)' },
-                    '50%': { transform: 'translateY(-10px)' },
-                },
-                slideInRight: {
-                    'from': { transform: 'scaleX(0)' },
-                    'to': { transform: 'scaleX(1)' },
-                },
                 fadeInUp: {
-                    'from': { opacity: '0', transform: 'translateY(20px)' },
+                    'from': { opacity: '0', transform: 'translateY(16px)' },
                     'to': { opacity: '1', transform: 'translateY(0)' },
-                }
+                },
             },
         },
     },

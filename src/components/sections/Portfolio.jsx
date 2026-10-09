@@ -12,10 +12,12 @@
 import { useState } from 'react';
 import { useTranslations } from 'next-intl';
 import { projects, projectCategories } from '@/data/profile';
+import SectionHeader from '@/components/layout/SectionHeader';
 
 // children = ส่วนเสริมท้ายผลงาน (ตอนนี้คือกราฟ GitHub ส่งมาจาก page.jsx)
 export default function Portfolio({ children }) {
     const t = useTranslations('Portfolio');
+    const tSection = useTranslations('Sections');
     const [category, setCategory] = useState('all'); // แท็บที่เลือกอยู่
 
     // กรองผลงานตามแท็บที่เลือก แล้วเรียงผลงานเด่นขึ้นก่อน (ที่เหลือเรียงตามลำดับใน profile.js)
@@ -23,17 +25,17 @@ export default function Portfolio({ children }) {
     const sortedProjects = [...visible.filter((p) => p.featured), ...visible.filter((p) => !p.featured)];
 
     return (
-        <section id="portfolio" className="section py-16 md:py-32 bg-[#0a0a19]/50 relative">
-            <div className="container relative z-10">
-                <div className="text-center mb-10 md:mb-20">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 gradient-text inline-block">
-                        {t('title')}
-                    </h2>
-                    <div className="h-1 w-24 bg-accent mx-auto rounded-full mt-2"></div>
-                </div>
+        <section id="portfolio" className="py-20 md:py-28 border-t border-white/[0.06] bg-background-secondary">
+            <div className="container">
+                <SectionHeader
+                    index="02"
+                    eyebrow={tSection('projects_eyebrow')}
+                    title={tSection('projects_title')}
+                    subtitle={tSection('projects_subtitle')}
+                />
 
                 {/* แท็บหมวดหมู่: กดแล้วเหลือเฉพาะผลงานในหมวดนั้น */}
-                <div className="flex flex-wrap justify-center gap-2 mb-10" role="tablist">
+                <div className="flex flex-wrap gap-2 mb-8" role="tablist">
                     {projectCategories.map((key) => {
                         const count = key === 'all' ? projects.length : projects.filter((p) => p.category === key).length;
                         const active = category === key;
@@ -43,32 +45,32 @@ export default function Portfolio({ children }) {
                                 role="tab"
                                 aria-selected={active}
                                 onClick={() => setCategory(key)}
-                                className={`px-4 py-2 rounded-full text-sm font-medium border transition-all ${active ? 'bg-accent text-black border-accent' : 'border-white/10 text-slate-400 hover:text-white hover:border-white/30'}`}
+                                className={`px-3.5 py-1.5 rounded-lg text-sm font-medium border transition-colors ${active ? 'bg-white text-black border-white' : 'border-white/10 text-slate-400 hover:text-white hover:border-white/30'}`}
                             >
-                                {t(`categories.${key}`)} <span className={active ? 'text-black/60' : 'text-slate-600'}>{count}</span>
+                                {t(`categories.${key}`)} <span className={`ml-1 tabular-nums ${active ? 'text-black/50' : 'text-slate-600'}`}>{count}</span>
                             </button>
                         );
                     })}
                 </div>
 
                 {/* การ์ดผลงานทั้งหมดในหมวดที่เลือก */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
                     {sortedProjects.map((project) => (
-                        <article key={project.id} className="glass-card flex flex-col h-full p-7">
-                            <div className="flex items-center justify-between mb-4 text-xs font-mono">
-                                <span className="text-accent uppercase tracking-wider">{t(`projects.${project.id}.role`)}</span>
-                                {project.year && <span className="text-slate-500">{project.year}</span>}
+                        <article key={project.id} className="card flex flex-col h-full p-6">
+                            <div className="flex items-center justify-between gap-3 mb-4 text-xs">
+                                <span className="text-accent font-medium">{t(`projects.${project.id}.role`)}</span>
+                                {project.year && <span className="font-mono text-slate-500">{project.year}</span>}
                             </div>
 
-                            <h3 className="text-xl font-bold mb-3 text-white">
+                            <h3 className="text-lg font-semibold mb-3 text-white leading-snug">
                                 {t(`projects.${project.id}.title`)}
                             </h3>
 
-                            <p className="text-slate-400 text-sm leading-relaxed mb-6 flex-1">
+                            <p className="text-slate-400 text-sm leading-relaxed mb-5 flex-1">
                                 {t(`projects.${project.id}.desc`)}
                             </p>
 
-                            <div className="flex flex-wrap gap-2 mb-6">
+                            <div className="flex flex-wrap gap-1.5">
                                 {project.tech.map((tech) => (
                                     <span key={tech} className="chip">{tech}</span>
                                 ))}
@@ -76,7 +78,7 @@ export default function Portfolio({ children }) {
 
                             {/* มีลิงก์เว็บจริงเท่านั้น ถึงจะโชว์ปุ่ม 'ดูเว็บไซต์' */}
                             {project.live && (
-                                <div className="pt-4 border-t border-white/5 text-sm font-medium">
+                                <div className="mt-5 pt-4 border-t border-white/[0.06] text-sm font-medium">
                                     <ProjectLink href={project.live} label={t('viewProject')} />
                                 </div>
                             )}
@@ -98,7 +100,7 @@ function ProjectLink({ href, label }) {
             href={href}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-slate-300 hover:text-accent transition-colors"
+            className="text-white hover:text-accent transition-colors"
         >
             {label} ↗
         </a>

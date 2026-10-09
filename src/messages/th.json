@@ -4,30 +4,27 @@
         "description": "พอร์ตโฟลิโอของหิรัญ ชัยเจริญสวัสดิ์ — AI Engineer และ Full Stack Developer ด้าน LLM, เว็บแอปพลิเคชัน และ Machine Learning"
     },
     "Nav": {
-        "home": "หน้าแรก",
-        "about": "เกี่ยวกับ",
-        "works": "ผลงาน",
+        "experience": "ประสบการณ์",
+        "projects": "ผลงาน",
+        "skills": "ทักษะ",
         "contact": "ติดต่อ"
     },
     "Hero": {
-        "greeting": "สวัสดี, ผมคือ",
         "name": "หิรัญ ชัยเจริญสวัสดิ์",
-        "role": "AI Engineer & Full Stack Developer",
-        "description": "มุ่งมั่นในการเรียนรู้นวัตกรรม AI และนำมาประยุกต์ใช้เพื่อสร้างสรรค์ผลงาน พัฒนาตนเองอย่างต่อเนื่องในด้าน Large Language Models (LLMs) และเทคโนโลยีเว็บสมัยใหม่",
-        "cta": "ดูผลงานของผม",
-        "contact": "ติดต่อผม",
-        "resume": "ดาวน์โหลด Resume",
+        "description": "พัฒนาระบบเว็บให้บริษัทและลูกค้า ตั้งแต่แพลตฟอร์มประมูลจัดซื้อไปจนถึงเครื่องมือภายในองค์กร ด้วย Next.js, NestJS และ PostgreSQL และนำ AI มาช่วยลดงานซ้ำในขั้นตอนการทำงานจริง",
+        "cta": "ดูผลงาน",
+        "resume": "ดาวน์โหลด CV",
         "stats_years": "ปีประสบการณ์",
-        "stats_projects": "ผลงาน"
+        "stats_projects": "ผลงานทั้งหมด",
+        "eyebrow": "Full Stack Developer · AI Engineer",
+        "stats_client": "งานบริษัท / ลูกค้า"
     },
     "About": {
-        "title": "เกี่ยวกับผม",
         "description": "ผมเป็น AI Engineer และ Full Stack Developer ที่มีความหลงใหลในเทคโนโลยีปัญญาประดิษฐ์ (AI) โดยเฉพาะ Large Language Models (LLMs) ผสานข้ามกับการพัฒนาเว็บ Application ด้วย Tech Stack ที่ทันสมัย เพื่อสร้างโซลูชันที่ใช้งานได้จริงและมีประสิทธิภาพ",
         "skills": "ทักษะและความสามารถ",
         "education": "การศึกษา",
         "experience": "ประสบการณ์การทำงาน",
         "certificates": "ใบรับรอง",
-        "tech_stack": "เทคโนโลยีและเครื่องมือ",
         "skill_categories": {
             "programming": "ภาษาโปรแกรม",
             "frontend": "Frontend Development",
@@ -71,7 +68,6 @@
         }
     },
     "Portfolio": {
-        "title": "ผลงานที่ผ่านมา",
         "viewProject": "ดูเว็บไซต์",
         "projects": {
             "proj1": {
@@ -149,7 +145,7 @@
         "email": "อีเมล",
         "github": "GitHub",
         "linkedin": "LinkedIn",
-        "resume": "ดาวน์โหลด Resume",
+        "resume": "ดาวน์โหลด CV",
         "phone": "โทรศัพท์",
         "profiles": "ช่องทางติดต่อ",
         "github_title": "กิจกรรมบน GitHub",
@@ -161,9 +157,22 @@
         "github_best_day": "มากสุดใน 1 วัน",
         "github_mon": "จ.",
         "github_wed": "พ.",
-        "github_fri": "ศ."
+        "github_fri": "ศ.",
+        "send_email": "ส่งอีเมล"
     },
     "Footer": {
-        "copyright": "© 2026 Hirun Chatcharoensawat. สงวนลิขสิทธิ์."
+        "copyright": "© 2026 Hirun Chatcharoensawat. สงวนลิขสิทธิ์.",
+        "built_with": "สร้างด้วย Next.js และ Tailwind CSS"
+    },
+    "Sections": {
+        "experience_eyebrow": "Experience",
+        "experience_title": "ประสบการณ์ทำงาน",
+        "projects_eyebrow": "Projects",
+        "projects_title": "ผลงานที่ผ่านมา",
+        "projects_subtitle": "ระบบให้บริษัท เว็บไซต์ลูกค้า และเครื่องมือที่ทำเอง — เลือกดูตามหมวดได้ด้านล่าง",
+        "skills_eyebrow": "Skills",
+        "skills_title": "ทักษะและเครื่องมือ",
+        "contact_eyebrow": "Contact",
+        "current": "ปัจจุบัน"
     }
 }
