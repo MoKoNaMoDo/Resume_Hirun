@@ -27,21 +27,12 @@ body {
     @apply inline-flex items-center gap-3 px-8 py-3.5 rounded-full font-semibold tracking-wide transition-all duration-300 relative overflow-hidden z-10;
   }
   
-  .btn::before {
-    content: '';
-    @apply absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full transition-transform duration-500 -z-10;
-  }
-  
-  .btn:hover::before {
-    @apply translate-x-full;
-  }
-
   .btn-primary {
-    @apply bg-accent text-black shadow-[0_0_20px_rgba(56,189,248,0.6)] hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(56,189,248,0.6)];
+    @apply bg-accent text-black hover:bg-sky-300;
   }
 
   .btn-outline {
-    @apply bg-white/5 border border-white/10 text-white backdrop-blur-sm hover:bg-white/10 hover:border-white hover:-translate-y-1;
+    @apply bg-white/5 border border-white/10 text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/40;
   }
 
   .glass {
@@ -49,7 +40,7 @@ body {
   }
   
   .glass-card {
-    @apply bg-gradient-to-b from-white/5 to-white/5 border border-white/10 backdrop-blur-md rounded-2xl transition-all duration-300 hover:border-accent hover:-translate-y-2 hover:shadow-[0_20px_40px_-5px_rgba(0,0,0,0.3),0_0_15px_rgba(56,189,248,0.6)];
+    @apply bg-gradient-to-b from-white/5 to-white/5 border border-white/10 backdrop-blur-md rounded-2xl transition-all duration-300 hover:border-accent/50;
   }
 
   .chip {
@@ -57,10 +48,20 @@ body {
   }
   
   .gradient-text {
-    @apply bg-clip-text text-transparent bg-gradient-to-br from-white via-accent to-white bg-[length:200%_auto] animate-[shine_5s_linear_infinite];
+    @apply bg-clip-text text-transparent bg-gradient-to-br from-white to-accent;
   }
 }
 
-@keyframes shine {
-  to { background-position: 200% center; }
+/* อนิเมชันช่องในกราฟ GitHub: ค่อยๆ เด้งขึ้นมา (ใช้ใน GitHubGrid.jsx) */
+@keyframes gh-pop {
+  from { opacity: 0; transform: scale(0.2); }
+  to   { opacity: 1; transform: scale(1); }
 }
+.gh-cell-pop {
+  animation: gh-pop 0.45s ease-out backwards;
+}
+/* ถ้าเครื่องผู้ใช้ตั้งค่าลดการเคลื่อนไหว → ไม่ต้องเล่นอนิเมชัน */
+@media (prefers-reduced-motion: reduce) {
+  .gh-cell-pop { animation: none; }
+}
+
